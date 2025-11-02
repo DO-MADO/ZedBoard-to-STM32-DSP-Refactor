@@ -56,9 +56,6 @@ Python FastAPI + WebSocket 기반 웹 UI를 <code>pyinstaller</code>로 <code>.e
 
 ## 🧑🏻‍💻 직접 사용한 기술
 
-
-## 🧑🏻‍💻 직접 사용한 기술
-
 | 구분 | 기술 |
 | :--- | :--- |
 | 📝 **Languages** | ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
@@ -69,3 +66,25 @@ Python FastAPI + WebSocket 기반 웹 UI를 <code>pyinstaller</code>로 <code>.e
 | 🧰 **Testing / Debug** | ![SerialPortMon](https://img.shields.io/badge/SerialPortMon-555555?style=for-the-badge&logo=serialport&logoColor=white) ![RS-485%20Loopback](https://img.shields.io/badge/RS--485%20Loopback%20Test-6E6E6E?style=for-the-badge&logoColor=white) |
 | 📦 **DevOps / Infra** | ![PyInstaller](https://img.shields.io/badge/PyInstaller%20(.exe)-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Batch%20Script](https://img.shields.io/badge/.bat%20Launcher-4EAA25?style=for-the-badge&logo=windowsterminal&logoColor=white) ![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white) ![CubeIDE](https://img.shields.io/badge/CubeIDE-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) |
 
+
+<br>
+
+## ⚡ 기능 요약
+- 🔄 실시간 DSP 파이프라인	<code>8ch ADC 입력 → LPF → TimeAvg → R, Ravg → y1, y2, y3, yt</code> 단계별 계산
+- 💬 양방향 <code>RS-485</code> 통신	<code>PC↔PCB 간 28/30</code> 필드 구조의 프레임 송수신 및 실시간 파싱
+- 🧠 비차단 구조 <code>HAL_Delay()</code> 제거 및 <code>ISR</code> 분리 → 벽시계 기반 <code>250ms</code> 주기 송신 구조로 리팩토링
+- 🧩 시리얼 노이즈 트러블슈팅	ST 앞단 노이즈 감지 → 프리패딩 방식으로 파싱 안정화
+- 💾 PC 모니터링 툴 패키징	pyinstaller 기반 <code>.exe</code> 빌드 및 Synthetic(가상테스트)/Serial(실장비) 모드 <code>.bat</code> 런처 제작
+- 🧪 멀티 환경 검증	Python 미설치 PC에서도 정상 실행 확인
+
+
+<br>
+
+
+
+## ✨ 핵심 성과
+
+- Zynq Linux 기반 DSP 시스템을 <code>STM32 Bare-metal MCU</code>로 완전 포팅 및 PC 연결
+- RS-485 기반 실시간 양방향 통신 프로토콜 직접 설계 및 검증
+- 비차단 송신 리팩토링으로 CPU 블로킹 해소 → RS-485 라인 노이즈 감소 및 데이터 전송 안정성 향상
+- 클라이언트 납품 가능한 실행 패키지(<code>.exe</code> 및 <code>.bat</code>) 형태로 Python 웹 앱 1차 제품화
