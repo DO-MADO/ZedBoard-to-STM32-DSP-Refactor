@@ -1,4 +1,4 @@
-<h1> 🧬 Zynq 기반 DSP 시스템을 STM32H723 Nucleo 보드로 이식 및 리팩토링한 실시간 신호처리 프로젝트</h1>
+<h1> 🎨 Zynq 기반 DSP 시스템을 STM32H723 Nucleo 보드로 이식<br> 및 리팩토링한 실시간 신호처리 프로젝트</h1>
 ZedBoard(Linux + Python FastAPI 기반)에서 구현된 실시간 DSP 파이프라인을
 
 <code>STM32H723ZG Nucleo</code> 보드로 <b>포팅</b>하고, <b>RS-485 시리얼 통신</b> 기반으로 <b>PC ↔ PCB</b> 간<br>
@@ -51,3 +51,18 @@ Python FastAPI + WebSocket 기반 웹 UI를 <code>pyinstaller</code>로 <code>.e
 5. 노이즈 트러블슈팅 :<br>
 실제 보드 연결 시 RS-485 라인 노이즈로 <code>st</code> 토큰 전 인식 실패 발생<br>
 → 시리얼 로그 분석 후 더미값 프리패딩으로 파싱 안정화
+
+<br>
+
+## 🧑🏻‍💻 직접 사용한 기술
+
+
+| 구분 | 기술 |
+| :--- | :--- |
+| 📝 **Languages** | ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
+| 🔧 **Embedded / Hardware** | ![STM32H723ZG](https://img.shields.io/badge/STM32H723ZG%20(Nucleo)-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white)  ![RS-485](https://img.shields.io/badge/RS--485-6E6E6E?style=for-the-badge&logo=serialport&logoColor=white) ![UART](https://img.shields.io/badge/UART-000000?style=for-the-badge&logo=serialport&logoColor=white) |
+| 🧠 **Embedded Software** | ![STM32CubeMX](https://img.shields.io/badge/STM32CubeMX-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white) ![STM32%20HAL](https://img.shields.io/badge/STM32%20HAL-0096FF?style=for-the-badge&logo=stmicroelectronics&logoColor=white) ![Bare--metal](https://img.shields.io/badge/Bare--metal%20(No%20RTOS)-555555?style=for-the-badge&logo=arm&logoColor=white) |
+| ⚙️ **Backend (PC)** | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white) ![PySerial](https://img.shields.io/badge/PySerial-306998?style=for-the-badge&logo=python&logoColor=white) |
+| 🌐 **Frontend (Monitor UI)** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white) |
+| 🧰 **Testing / Debug** |  ![SerialPortMon](https://img.shields.io/badge/SerialPortMon-555555?style=for-the-badge&logo=serialport&logoColor=white) ![RS-485%20Loopback](https://img.shields.io/badge/RS--485%20Loopback%20Test-6E6E6E?style=for-the-badge&logoColor=white) |
+| 📦 **DevOps / Infra** | ![PyInstaller](https://img.shields.io/badge/PyInstaller-3776AB?style=for-the-badge&logo=python&logoColor=white) ![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white) ![CubeIDE](https://img.shields.io/badge/CubeIDE-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)   |
