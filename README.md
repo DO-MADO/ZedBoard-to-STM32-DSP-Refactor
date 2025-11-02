@@ -73,7 +73,7 @@ Python FastAPI + WebSocket 기반 웹 UI를 <code>pyinstaller</code>로 <code>.e
 - 🔄 실시간 DSP 파이프라인	<code>8ch ADC 입력 → LPF → TimeAvg → R, Ravg → y1, y2, y3, yt</code> 단계별 계산
 - 💬 양방향 <code>RS-485</code> 통신	<code>PC↔PCB 간 28/30</code> 필드 구조의 프레임 송수신 및 실시간 파싱
 - 🧠 비차단 구조 <code>HAL_Delay()</code> 제거 및 <code>ISR</code> 분리 → 벽시계 기반 <code>250ms</code> 주기 송신 구조로 리팩토링
-- 🧩 시리얼 노이즈 트러블슈팅	ST 앞단 노이즈 감지 → 프리패딩 방식으로 파싱 안정화
+- 🧩 시리얼 노이즈 트러블슈팅	ST 앞단 노이즈 감지 → 수신 동기화 보정 로직 임시 적용으로 파싱 안정화
 - 💾 PC 모니터링 툴 패키징	pyinstaller 기반 <code>.exe</code> 빌드 및 Synthetic(가상테스트)/Serial(실장비) 모드 <code>.bat</code> 런처 제작
 - 🧪 멀티 환경 검증	Python 미설치 PC에서도 정상 실행 확인
 
@@ -88,3 +88,18 @@ Python FastAPI + WebSocket 기반 웹 UI를 <code>pyinstaller</code>로 <code>.e
 - RS-485 기반 실시간 양방향 통신 프로토콜 직접 설계 및 검증
 - 비차단 송신 리팩토링으로 CPU 블로킹 해소 → RS-485 라인 노이즈 감소 및 데이터 전송 안정성 향상
 - 클라이언트 납품 가능한 실행 패키지(<code>.exe</code> 및 <code>.bat</code>) 형태로 Python 웹 앱 1차 제품화
+
+
+
+<br>
+
+
+## 📡 시스템 아키텍쳐 및 DSP 상세 파이프라인
+
+
+<br>
+
+
+## 🖼️ 이미지 자료
+
+
