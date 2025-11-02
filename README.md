@@ -40,8 +40,8 @@ ZedBoard(Linux + Python FastAPI 기반)에서 구현된 실시간 DSP 파이프�
 
 3. 비차단(Non-Blocking) 구조 개선 :<br>
 <code>HAL_Delay()</code> 제거 후 “벽시계 기반 전송(비차단 타이머)”으로 변경<br>
-→ 실시간 DSP 루프 정지 없이 안전한 데이터 전송 구현
-
+→ 실시간 DSP 루프 정지 없이 안전한 데이터 전송 구현<br>
+→ ISR 경량화 : 인터럽트에서는 flag + buffer 처리만 수행 (무거운 파싱 제거)
 
 4. PC 프로그램 패키징 및 배포 :<br>
 Python FastAPI + WebSocket 기반 웹 UI를 <code>pyinstaller</code>로 <code>.exe</code> 변환 및 <code>.bat</code> 런처 제작<br>
