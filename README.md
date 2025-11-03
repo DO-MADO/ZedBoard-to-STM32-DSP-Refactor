@@ -106,14 +106,12 @@ Python FastAPI + WebSocket 기반 웹 UI를 <code>pyinstaller</code>로 <code>.e
 
 
 ## 🖼️ 이미지 자료
-<img width="876" height="429" alt="스크린샷 2025-11-02 오후 3 20 28" src="https://github.com/user-attachments/assets/16b75936-b051-43b5-b5b0-5c96154f1081" />
 
 ![image22](https://github.com/user-attachments/assets/4e7a52e2-15f3-4f89-97c9-8ede85a750df)
 <img width="1045" height="356" alt="KakaoTalk_Photo_2025-11-02-15-25-07" src="https://github.com/user-attachments/assets/a13bc20b-d9fb-4061-b26d-c144a80227bb" />
 
 <hr>
 
-<img width="953" height="514" alt="스크린샷 2025-11-02 오후 3 16 44" src="https://github.com/user-attachments/assets/85984170-c45f-49fe-b66e-65358777e130" />
 <img width="1720" height="840" alt="image" src="https://github.com/user-attachments/assets/92bee158-9cb0-4c9f-8446-e4c6ab1b4f9c" />
 <img width="900" height="700" alt="제목을-입력해주세요_-001" src="https://github.com/user-attachments/assets/6b09eece-1719-4f33-9150-f3b4386f35c5" />
 
